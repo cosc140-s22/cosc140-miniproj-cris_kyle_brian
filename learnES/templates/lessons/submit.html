@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="white">Your answers to Lesson #{{ lesson.level }}</h1>
+<form method="post" action="{% url 'lesson-submit' lesson.id %}">
+  {% csrf_token %}
+  <ol>
+  {% for question in questions %}
+    <li>{{ question.question }}</li>
+    <ol>
+    {% for answer in question.answer_set.all %}
+    <li>
+      <input type="radio" name="choice-{{question.id}}" value="{{ answer.id }}" > {{ answer.content }}
+    </li>
+    {% endfor %}
+    </ol>
+  {% endfor %}
+  </ol>
+    
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+{% endblock %}

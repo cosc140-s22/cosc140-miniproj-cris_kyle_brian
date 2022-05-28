@@ -1,0 +1,24 @@
+body{
+    background-color: slategray;
+  }
+.white{
+    color: #ebebeb;
+  }
+.bold{
+    font-weight: bold;
+  }
+.lightgray{
+    color: #e3e8ee;
+  }
+.center{
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

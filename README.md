@@ -2,11 +2,11 @@
 
 ## Team members
 
-Please replace this text with names of who worked on this miniproject.
+Cris, Kyle and Brian
 
 ## Miniproject descripton
 
-Please replace this text with a brief overview of what you've done for your miniproject.
+For this mininproject we decided to create a small doulingo-like spanish learning website in which the user takes quizzes and receives their score back. The lessons have difficulties to them and all the questions are multiple choice. Also you have to log in after creating a super user and your grades are tracked.
 
 ## Feedback
 

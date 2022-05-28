@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+<p class="lead">Leave a review</p>
+</section>
+
+<section>
+
+
+<form action = "{%url 'createreview' lesson.id %}" method = 'POST'>
+  {% csrf_token %}
+  {{ form.as_table }}
+  <input type="submit" value = "Submit">
+</form>
+
+</section>
+
+{% endblock %}
+
+{% block footer %}
+<br>
+<div>
+<a class="btn btn-sm btn-dark" href="{% url 'lesson-detail' lesson.id %}">Back to lesson</a>
+<a class="btn btn-sm btn-primary" href="{% url 'lessons' %}">Back to all lessons</a>
+</div>
+{% endblock %}

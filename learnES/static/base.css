@@ -1,0 +1,23 @@
+body {
+  background-color: slategray;
+}
+.white{
+  color: white;
+}
+.text{
+  color: #e3e8ee;
+  font: w3-monospace;
+  text-shadow:1px 1px 0 #444;
+  font-size: xx-large;
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: relative;
+  text-align: center;
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}

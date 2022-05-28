@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %} Start - Lesson {{ lesson.level}}, {{ lesson.difficulty }} difficulty {% endblock %}
+
+{% load static %}
+
+{% block content %}
+<form action="{% url 'lesson-submit' lessons.id %}" request="post">
+  {% csrf_token %}
+  {{ form }}
+  <h1 class="white lead">{{ lesson.description }} </h1>
+</form>
+  <a href="{% url 'lesson-submit' lessons.id %}"><button class="btn btn-success" role = "button">Start Lesson</button></a>
+{% endblock %}
